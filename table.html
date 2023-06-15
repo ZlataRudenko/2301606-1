@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: skyblue;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 500px;
+            background-color: #ffffff;
+        }
+        table td,
+        table th {
+            border: 1px solid #000000;
+            padding: 8px;
+        }
+        table th {
+            background-color: skyblue;
+            color: #ffffff;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table tr:last-child td:first-child {
+            background-color: purple;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="https://cat-bounce.com/"><img src="./img/logo2.png" alt="LOGO" width="100"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="input.html">INPUT</a></li>
+                <li><a href="main.html">MAIN</a></li>
+                <li><a href="table.html">TABLE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <table>
+        <tr>
+            <th width="100">Name</th>
+            <th width="100">Korean</th>
+            <th width="100">Math</th>
+            <th width="100">Coding</th>
+            <th width="100">Rank</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>90</td>
+            <td>80</td>
+            <td>70</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>100</td>
+            <td>80</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>100</td>
+            <td>60</td>
+            <td>70</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Sarah Williams</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="4">Total Students</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+</html>

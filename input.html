@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+        h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        p {
+            color: #4CAF50;
+            font-size: 16px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        h3 {
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+        p.footer {
+            margin-top: 50px;
+            color: gray;
+        }
+        .logo img {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="https://cat-bounce.com/"><img src="./img/logo2.png" alt="LOGO" width="200"></a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="input.html">Input</a></li>
+                <li><a href="main.html">Main</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Hello!</p>
+    <p>Fighting</p>
+    <br>
+    <p>User ID: <input type="text" name="id" maxlength="8" size="8"></p>
+    <p>User PW: <input type="password" name="pw" maxlength="8" size="8"></p>
+
+    <p><input type="radio" name="gender" value="male">Male</p>
+    <p><input type="radio" name="gender" value="female">Female</p>
+
+    <p><input type="checkbox" name="hobby1" value="movie">Movie
+        <input type="checkbox" name="hobby2" value="photography">Photography
+        <input type="checkbox" name="hobby3" value="music">Music
+
+    <p><input type="number" name="cart" value="1" min="1" max="5"></p>
+
+    <p><input type="color" name="mycolor" value="#CEF279"></p>
+
+    <p><input type="button" onclick="alert('Hello, please enter your ID.')" value="Click!"></p>
+
+    <p><input type="date" name="date1" max="2023-06-30" min="2023-01-01"></p>
+    <p><input type="date" name="maxdate" max="1979-12-31"></p>
+    <p><input type="date" name="mindate" min="2023-01-01"></p>
+
+    <p><input type="range" name="points" min="0" max="10" value="8"></p>
+
+    <form action="/search" method="get">
+        <input type="text" name="search" placeholder="Search">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+
+    <h3>Latest News</h3>
+    <p>Check out the latest news and updates about my organization.</p>
+    <p class="footer">© 2023 My Organization. All rights reserved.</p>
+</body>
+</html>
